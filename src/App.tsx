@@ -24,8 +24,8 @@ function App() {
       setSelectedFile(event.target.files[0]);
     }
   }
-
-  const onFileSubmit = () => {
+  
+  const onImageSubmit = () => {
     if(selectedFile !== null) {
       const img = new Image();
       console.log('selected file: ', selectedFile);
