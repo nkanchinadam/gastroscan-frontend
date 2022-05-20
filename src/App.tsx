@@ -4,7 +4,8 @@ import { getPixels } from './getPixels';
 
 function App() {
   const [modelType, setModelType] = useState<ModelType>('abnormality');
-  const [selectedFile, setSelectedFile] = useState(null);
+  const [selectedFile, setSelectedFile] = useState<File | null>(null);
+  const [isImage, setIsImage] = useState(true);
   const [prediction, setPrediction] = useState<AbnormalityLabels | ConditionLabels | null>(null);
 
   const imageDisplay = useRef<HTMLCanvasElement>(null);
