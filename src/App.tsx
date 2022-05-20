@@ -68,7 +68,7 @@ function App() {
   return (
     <div>
       {prediction ? 
-        <div>
+        <div style={prediction === 'Healthy' ? {backgroundColor: '#00ff00'} : {backgroundColor: '#ff0000'}}>
           <button onClick={backButton}>Back</button>
           <h2>{prediction}</h2>
         </div> :
